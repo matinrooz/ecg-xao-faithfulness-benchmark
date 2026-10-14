@@ -1,0 +1,33 @@
+seed=50
+arch=deeper
+num_classes=2
+use_class_weights=False
+epochs=20
+batch_size=128
+lr=0.001
+weight_decay=0.0001
+dropout=0.2
+grad_clip=1.0
+------------------------------------------------------------
+epoch=001 | loss=0.3004 | train_acc=0.9083 | val_acc=0.9081 | lr=0.001000
+epoch=002 | loss=0.2260 | train_acc=0.9143 | val_acc=0.9121 | lr=0.001000
+epoch=003 | loss=0.2115 | train_acc=0.9130 | val_acc=0.9027 | lr=0.001000
+epoch=004 | loss=0.1971 | train_acc=0.9274 | val_acc=0.9167 | lr=0.001000
+epoch=005 | loss=0.1906 | train_acc=0.9314 | val_acc=0.9134 | lr=0.001000
+epoch=006 | loss=0.1869 | train_acc=0.9076 | val_acc=0.8981 | lr=0.001000
+epoch=007 | loss=0.1864 | train_acc=0.9372 | val_acc=0.9161 | lr=0.001000
+epoch=008 | loss=0.1778 | train_acc=0.9288 | val_acc=0.9147 | lr=0.000500
+epoch=009 | loss=0.1601 | train_acc=0.9423 | val_acc=0.9247 | lr=0.000500
+epoch=010 | loss=0.1576 | train_acc=0.9039 | val_acc=0.9021 | lr=0.000500
+epoch=011 | loss=0.1559 | train_acc=0.9431 | val_acc=0.9194 | lr=0.000500
+epoch=012 | loss=0.1558 | train_acc=0.9340 | val_acc=0.9074 | lr=0.000500
+epoch=013 | loss=0.1470 | train_acc=0.9434 | val_acc=0.9121 | lr=0.000250
+epoch=014 | loss=0.1409 | train_acc=0.9481 | val_acc=0.9280 | lr=0.000250
+epoch=015 | loss=0.1359 | train_acc=0.9494 | val_acc=0.9154 | lr=0.000250
+epoch=016 | loss=0.1373 | train_acc=0.9531 | val_acc=0.9207 | lr=0.000250
+epoch=017 | loss=0.1345 | train_acc=0.9532 | val_acc=0.9214 | lr=0.000250
+epoch=018 | loss=0.1353 | train_acc=0.9531 | val_acc=0.9201 | lr=0.000125
+epoch=019 | loss=0.1261 | train_acc=0.9516 | val_acc=0.9194 | lr=0.000125
+epoch=020 | loss=0.1255 | train_acc=0.9556 | val_acc=0.9174 | lr=0.000125
+------------------------------------------------------------
+best_val_acc=0.9280

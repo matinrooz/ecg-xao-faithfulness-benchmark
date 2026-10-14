@@ -1,0 +1,13 @@
+\begin{table}[htbp]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+Model & Accuracy & Macro F1 & Macro AUC & Macro Average Precision \\
+\midrule
+CNN                        & $0.785 \pm 0.008$ & $0.656 \pm 0.022$ & $0.928 \pm 0.003$ & $0.743 \pm 0.010$ \\
+CNN--BiLSTM + Attention    & $0.766 \pm 0.011$ & $0.672 \pm 0.011$ & $0.928 \pm 0.003$ & $0.742 \pm 0.009$ \\
+\bottomrule
+\end{tabular}
+\caption{Mean $\pm$ standard deviation classification performance on the five-class task across ten random seeds.}
+\label{tab:fiveclass_summary}
+\end{table}

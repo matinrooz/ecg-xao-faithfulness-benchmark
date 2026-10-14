@@ -1,0 +1,14 @@
+==========================================================
+Bland-Altman Agreement Analysis
+  A = IG
+  B = DTD
+==========================================================
+n pairs              : 1517
+Mean diff  (A - B)   : +0.009673
+SD of diff           : 0.015895
+LoA upper (+1.96 SD) : +0.040827
+LoA lower (-1.96 SD) : -0.021481
+LoA width            : 0.062308
+
+Interpretation: IG has higher AUC on average -> DTD is more faithful
+(AUC lower = better faithfulness; diff > 0 -> A worse)

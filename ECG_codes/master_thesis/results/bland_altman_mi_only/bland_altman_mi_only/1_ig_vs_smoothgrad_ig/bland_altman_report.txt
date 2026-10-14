@@ -1,0 +1,14 @@
+==========================================================
+Bland-Altman Agreement Analysis
+  A = IG
+  B = SmoothGrad-IG
+==========================================================
+n pairs              : 1517
+Mean diff  (A - B)   : +0.000749
+SD of diff           : 0.017948
+LoA upper (+1.96 SD) : +0.035928
+LoA lower (-1.96 SD) : -0.034430
+LoA width            : 0.070358
+
+Interpretation: IG has higher AUC on average -> SmoothGrad-IG is more faithful
+(AUC lower = better faithfulness; diff > 0 -> A worse)

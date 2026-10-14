@@ -1,0 +1,37 @@
+============================================================
+final report
+
+============================================================
+model_type            : cnn_lstm_attn
+attribution_method    : dtd
+sg_samples            : 0
+sg_sigma              : 0.0
+baseline              : zero
+perturb_mode          : zero_out
+interp_alpha          : 0.5
+synth_method          : ecgsyn
+per_lead_phase        : True
+edge_mask             : 30
+eval_granularity      : timestep
+n_segments            : 50
+chunk_size            : 10
+timestep_score        : mean_abs
+ig_steps              : 50
+n_samples             : 1517
+
+Win rate (DTD < rand): 1059/1517  (69.8%)
+
+Completeness check (IG only — N/A for SmoothGrad-IG):
+  median rel_error    : nan%
+  max    rel_error    : nan%
+  (>5% -> --ig_steps too small; nan = SmoothGrad-IG run)
+
+AUC (lower = better):
+  DTD-guided mean=0.5499  std=0.0495  95% CI [0.5475, 0.5524]
+  Random     mean=0.7000  std=0.1827  95% CI [0.6911, 0.7089]
+  Delta(R-M) mean=0.1501  95% CI [0.1411, 0.1591]
+
+Wilcoxon signed-rank (DTD AUC < random AUC):
+  statistic  : 170178.0000
+  p_value    : 3.967463e-125
+  n_pairs    : 1517

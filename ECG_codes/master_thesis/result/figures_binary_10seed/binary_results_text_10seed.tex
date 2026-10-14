@@ -1,0 +1,50 @@
+% ------------------------------------------------------------------
+% Binary NORM-versus-MI Classification -- 10-seed Results subsection
+% (values computed from 10 trained seeds per model; see Table~\ref{tab:binary_summary})
+% ------------------------------------------------------------------
+
+\subsection{Binary NORM-versus-MI Classification}
+\label{sec:binary_results}
+
+The explainability experiments presented in the following sections are based on a binary
+NORM-versus-MI classification task. This simplified setting facilitates the interpretation
+of attribution maps and enables a more direct comparison of the different attribution
+methods. Classification performance was evaluated on the held-out test set over ten
+independent random initialisations, using Accuracy, Macro F1, ROC-AUC, and Average
+Precision. Table~\ref{tab:binary_summary} summarises the mean performance across all ten
+seeds, and Figure~\ref{fig:binary_boxplots} shows the corresponding variability.
+
+The results in Table~\ref{tab:binary_summary} indicate that the two architectures achieved
+highly comparable performance on the binary task. The CNN--BiLSTM with Attention obtained
+marginally higher mean values on all four metrics, namely Accuracy (0.912 vs.\ 0.907),
+Macro F1 (0.904 vs.\ 0.897), ROC-AUC (0.972 vs.\ 0.969), and Average Precision
+(0.960 vs.\ 0.956). These differences are small and of the same order as the seed-to-seed
+variation, so they should not be over-interpreted; overall, both models achieved comparable
+predictive performance on the held-out test set.
+
+The boxplots in Figure~\ref{fig:binary_boxplots} confirm that the two metric distributions
+overlap substantially for every metric, further indicating that the observed differences are
+minor. The variability across seeds was small for both architectures. ROC-AUC was the most
+stable metric, with standard deviations of approximately 0.001--0.002, suggesting consistent
+ranking performance across different random initialisations, whereas Accuracy and Macro F1
+exhibited slightly greater dispersion. In all cases the distributions of the two models
+remain largely overlapping.
+
+Figure~\ref{fig:binary_roc_pr} shows the mean ROC and Precision--Recall curves (with MI as
+the positive class) aggregated over the ten seeds, with $\pm$one standard-deviation bands.
+The ROC curves of the two architectures almost completely overlap across the full operating
+range, and the Precision--Recall curves differ only marginally at high recall. Both models
+therefore exhibit almost identical discrimination performance on the binary NORM-versus-MI
+task, consistent with the near-identical ROC-AUC and Average Precision values reported in
+Table~\ref{tab:binary_summary}.
+
+% ---- Captions (for the two figures) ----
+% Figure (binary boxplots):
+% "Distribution of Accuracy, Macro F1 score, ROC-AUC, and Average Precision for the CNN
+%  and CNN-BiLSTM with Attention models across ten random seeds. Each box shows the
+%  interquartile range and median; the ten individual seed values are overlaid as jittered
+%  points."
+%
+% Figure (binary ROC/PR):
+% "Macro-average one-versus-rest ROC and Precision-Recall curves for the CNN and
+%  CNN-BiLSTM with Attention across ten random seeds."

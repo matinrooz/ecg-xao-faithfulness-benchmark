@@ -1,0 +1,15 @@
+Split: test
+Arch: baseline
+Num classes: 2
+Accuracy: 0.8972
+Macro F1: 0.8867
+AUC: 0.9604
+Average Precision: 0.9440
+Precision (MI): 0.8946
+Recall (MI): 0.8137
+F1 (MI): 0.8523
+Per-class F1: [0.921, 0.852]
+Class mapping: {0: 'NORM', 1: 'MI'}
+Confusion matrix (rows=true, cols=pred):
+[[911  53]
+ [103 450]]

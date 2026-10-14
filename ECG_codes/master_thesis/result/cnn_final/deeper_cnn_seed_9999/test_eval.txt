@@ -1,0 +1,13 @@
+Split: test
+Arch: deeper
+Accuracy: 0.7712
+Macro F1: 0.6289
+Macro AUC: 0.9230
+Macro Average Precision: 0.7324
+Per-class F1: [0.712, 0.282, 0.582, 0.853, 0.716]
+Confusion matrix (rows=true, cols=pred):
+[[111   2  11  49  11]
+ [  2  10   1  40   3]
+ [  6   1 124  90  35]
+ [  9   1  19 844  40]
+ [  0   1  15  42 185]]

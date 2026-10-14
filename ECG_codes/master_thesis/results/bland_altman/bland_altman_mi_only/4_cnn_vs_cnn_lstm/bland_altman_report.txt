@@ -1,0 +1,14 @@
+==========================================================
+Bland-Altman Agreement Analysis
+  A = CNN
+  B = CNN-LSTM
+==========================================================
+n pairs              : 1517
+Mean diff  (A - B)   : +0.023028
+SD of diff           : 0.064205
+LoA upper (+1.96 SD) : +0.148869
+LoA lower (-1.96 SD) : -0.102813
+LoA width            : 0.251682
+
+Interpretation: CNN has higher AUC on average -> CNN-LSTM is more faithful
+(AUC lower = better faithfulness; diff > 0 -> A worse)

@@ -1,0 +1,13 @@
+{
+  "arch": "cnn_lstm_attn",
+  "epochs": 20,
+  "batch_size": 128,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "dropout": 0.3,
+  "lstm_hidden": 64,
+  "attn_hidden": 64,
+  "seed": 777,
+  "use_class_weights": true,
+  "grad_clip": 1.0
+}

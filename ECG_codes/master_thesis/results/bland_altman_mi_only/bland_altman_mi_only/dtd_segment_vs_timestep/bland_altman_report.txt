@@ -1,0 +1,14 @@
+==========================================================
+Bland-Altman Agreement Analysis
+  A = segment
+  B = timestep
+==========================================================
+n pairs              : 1517
+Mean diff  (A - B)   : +0.046903
+SD of diff           : 0.033328
+LoA upper (+1.96 SD) : +0.112226
+LoA lower (-1.96 SD) : -0.018421
+LoA width            : 0.130647
+
+Interpretation: segment has higher AUC on average -> timestep is more faithful
+(AUC lower = better faithfulness; diff > 0 -> A worse)

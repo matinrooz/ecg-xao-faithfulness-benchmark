@@ -1,0 +1,20 @@
+IG Completeness Check — cnn_lstm
+==================================================
+n_samples        : 20
+target_class     : 1
+baseline         : zeros (zero_out mode)
+ig_steps         : 50
+
+Relative error  (|sum(IG) - (f(x)-f(b))| / (|f(x)-f(b)| + 1e-8)):
+  mean           : 1.7711e-02
+  median         : 8.0134e-03
+  std            : 3.0562e-02
+  min            : 9.8503e-05
+  max            : 1.4356e-01
+  % < 1e-2       : 60.0%
+  % < 5e-2       : 95.0%
+
+Interpretation:
+  rel_error < 1e-2 (~1%)  → excellent completeness
+  rel_error < 5e-2 (~5%)  → acceptable for midpoint-rule IG
+  rel_error > 5e-2        → check ig_steps (try --ig_steps 100)

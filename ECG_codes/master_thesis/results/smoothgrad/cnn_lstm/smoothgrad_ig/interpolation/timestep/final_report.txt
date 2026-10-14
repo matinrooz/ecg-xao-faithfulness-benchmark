@@ -1,0 +1,37 @@
+============================================================
+final report
+
+============================================================
+model_type            : cnn_lstm_attn
+attribution_method    : smoothgrad_ig
+sg_samples            : 5
+sg_sigma              : 0.05
+baseline              : aligned_synth
+perturb_mode          : interpolate
+interp_alpha          : 0.5
+synth_method          : ecgsyn
+per_lead_phase        : True
+edge_mask             : 30
+eval_granularity      : timestep
+n_segments            : 50
+chunk_size            : 10
+timestep_score        : mean_abs
+ig_steps              : 50
+n_samples             : 1517
+
+Win rate (SmoothGrad-IG < rand): 1302/1517  (85.8%)
+
+Completeness check (IG only — N/A for SmoothGrad-IG):
+  median rel_error    : nan%
+  max    rel_error    : nan%
+  (>5% -> --ig_steps too small; nan = SmoothGrad-IG run)
+
+AUC (lower = better):
+  SmoothGrad-IG-guided mean=0.5118  std=0.1223  95% CI [0.5056, 0.5177]
+  Random     mean=0.6803  std=0.2208  95% CI [0.6693, 0.6910]
+  Delta(R-M) mean=0.1685  95% CI [0.1613, 0.1758]
+
+Wilcoxon signed-rank (SmoothGrad-IG AUC < random AUC):
+  statistic  : 70608.0000
+  p_value    : 7.816049e-193
+  n_pairs    : 1517

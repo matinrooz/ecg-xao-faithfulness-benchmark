@@ -1,0 +1,15 @@
+Split: test
+Arch: cnn_lstm_attn
+Num classes: 2
+Accuracy: 0.9084
+Macro F1: 0.8983
+AUC: 0.9703
+Average Precision: 0.9577
+Precision (MI): 0.9259
+Recall (MI): 0.8137
+F1 (MI): 0.8662
+Per-class F1: [0.93, 0.866]
+Class mapping: {0: 'NORM', 1: 'MI'}
+Confusion matrix (rows=true, cols=pred):
+[[928  36]
+ [103 450]]

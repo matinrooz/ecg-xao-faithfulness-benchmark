@@ -1,0 +1,27 @@
+seed=123
+arch=deeper
+use_class_weights=False
+epochs=20
+batch_size=128
+lr=0.001
+--------------------------------------------------
+Epoch 1: train_acc=0.7514 val_acc=0.7156
+Epoch 2: train_acc=0.7750 val_acc=0.7509
+Epoch 3: train_acc=0.7796 val_acc=0.7491
+Epoch 4: train_acc=0.7994 val_acc=0.7588
+Epoch 5: train_acc=0.7973 val_acc=0.7600
+Epoch 6: train_acc=0.8118 val_acc=0.7661
+Epoch 7: train_acc=0.8128 val_acc=0.7722
+Epoch 8: train_acc=0.8158 val_acc=0.7856
+Epoch 9: train_acc=0.7855 val_acc=0.7467
+Epoch 10: train_acc=0.8200 val_acc=0.7826
+Epoch 11: train_acc=0.8306 val_acc=0.7734
+Epoch 12: train_acc=0.8244 val_acc=0.7734
+Epoch 13: train_acc=0.8101 val_acc=0.7576
+Epoch 14: train_acc=0.8319 val_acc=0.7734
+Epoch 15: train_acc=0.8362 val_acc=0.7808
+Epoch 16: train_acc=0.8407 val_acc=0.7801
+Epoch 17: train_acc=0.8112 val_acc=0.7613
+Epoch 18: train_acc=0.8257 val_acc=0.7564
+Epoch 19: train_acc=0.8286 val_acc=0.7716
+Epoch 20: train_acc=0.8420 val_acc=0.7722

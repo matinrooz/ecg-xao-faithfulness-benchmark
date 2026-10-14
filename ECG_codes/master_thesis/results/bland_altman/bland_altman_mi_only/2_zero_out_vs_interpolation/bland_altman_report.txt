@@ -1,0 +1,14 @@
+==========================================================
+Bland-Altman Agreement Analysis
+  A = zero-out
+  B = interpolation
+==========================================================
+n pairs              : 553
+Mean diff  (A - B)   : +0.130067
+SD of diff           : 0.128747
+LoA upper (+1.96 SD) : +0.382411
+LoA lower (-1.96 SD) : -0.122276
+LoA width            : 0.504687
+
+Interpretation: zero-out has higher AUC on average -> interpolation is more faithful
+(AUC lower = better faithfulness; diff > 0 -> A worse)

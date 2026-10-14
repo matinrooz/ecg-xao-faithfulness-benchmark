@@ -1,0 +1,23 @@
+{
+  "sample_index": 31,
+  "fs_hz": 100,
+  "n_timesteps_full": 1000,
+  "crop_start_step": 203,
+  "crop_end_step": 403,
+  "crop_len_steps": 200,
+  "crop_start_s": 2.03,
+  "crop_end_s": 4.03,
+  "centre_step": 303,
+  "centre_s": 3.03,
+  "leads_shown": [
+    "I",
+    "II",
+    "aVF"
+  ],
+  "rule": "centre = argmax of pooled attribution magnitude across IG, SmoothGrad-IG, DTD and both architectures (|attr| per-lead normalized by full-10s max, averaged over leads I/II/aVF then over the 6 maps); window fixed for all panels; coincides with a QRS R-peak at this timestep.",
+  "normalization": "per-lead |attr| / full-10s per-lead max (original scale preserved)",
+  "y_lim": [
+    -4.327784670899262,
+    7.045255555222382
+  ]
+}

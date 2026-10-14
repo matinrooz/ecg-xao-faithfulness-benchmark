@@ -1,0 +1,18 @@
+# Python dependencies for the ECG XAI thesis project.
+# Versions pinned to the environment used to produce the thesis results
+# (sciCORE "ecg-env", Python 3.10). Install with:
+#     pip install -r requirements.txt
+
+#  core deep learning + numerics 
+torch==2.10.0          # sciCORE used the CUDA 12.8 build (torch==2.10.0+cu128); on CPU-only machines plain 2.10.0 is fine
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+pandas==2.3.3
+
+# plotting 
+matplotlib==3.10.8
+
+# --- ECG data + signal processing 
+wfdb==4.3.1            # reading raw PTB-XL WFDB records (preprocessing)
+neurokit2==0.2.13      # R-peak detection / synthetic ECG (signal_utils.py)

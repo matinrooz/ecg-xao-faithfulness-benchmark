@@ -1,0 +1,13 @@
+\begin{table}[htbp]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+Model & Accuracy & Macro F1 & ROC-AUC & Average Precision \\
+\midrule
+CNN                        & 0.907 & 0.897 & 0.969 & 0.956 \\
+CNN--BiLSTM with Attention & 0.912 & 0.904 & 0.972 & 0.960 \\
+\bottomrule
+\end{tabular}
+\caption{Mean classification performance on the binary NORM-versus-MI task across ten random seeds.}
+\label{tab:binary_summary}
+\end{table}
